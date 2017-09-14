@@ -105,8 +105,16 @@ console.log (mustBeTrue (true));
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
-
-
+function bigBird (word) {
+	if (word.length === 3){
+		return "Word To Big bigBird";
+	}else{
+		return false;
+	}
+}
+console.log (bigBird("big"));
+var firstName = "Jenn";
+console.log (firstName.length);
 /*
  * #6
  * Function - isEqual
@@ -119,8 +127,14 @@ console.log (mustBeTrue (true));
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
-
-
+function isEqual (first, second){
+	if (first === second){
+		return "You look mahvelous!"; 
+	}else{
+		return "I don't know who you are anymore.";
+	}
+} 
+console.log (isEqual(1,1));
 /*
  * #7
  * Function - notEqual
@@ -133,8 +147,14 @@ console.log (mustBeTrue (true));
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
-
-
+function notEqual (first, second){
+	if (first!== second){
+		return "Opposites do attract."; 
+	}else{
+		return "Cause it's like you're my mirror."; 
+	}
+}
+console.log (notEqual (1,2));
 /*
  * #8
  * Function - spareChange
